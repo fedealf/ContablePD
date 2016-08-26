@@ -1,4 +1,4 @@
-FEDEEEEEE<?php
+<?php
 
 class Acceso {
     
