@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Sistema Contable PD</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+   <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+  
+</head>
+<body>
+   
+
+<h5 class="header center orange-text">Gestión de Donantes</h5>
+<hr align="center" width="80%" style="color: #29b6f6;">
+<br/>
+
+<div class="container">
+ 
+  <div class="row">
+      
+    <form action="gestion_donante.php" method="post" class="col s12">
+      
+      <div class="row">
+        <div class="center input-field col s6">
+          <input id="descripciondonante" type="text" class="validate" name="buscadonante">
+          <label for="descripciondonante">Descripción del Donante</label>
+        </div>
+          <div class="center input-field col s6">
+        <button class="btn waves-effect waves-light orange" type="submit" name="buscar">Buscar</button>
+        <button class="btn waves-effect waves-light orange" type="submit" name="limpiar">Limpiar</button>
+          </div>
+      </div>
+     
+    </form>
+	
+  
+  </div>
+  </div>
+
+
+<div class="container">
+ 
+  <div class="row">
+      
+    <form action="gestion_donante.php" method="post" class="col s12">
+      
+      <div class="row">
+        <div class="center input-field col s6">
+          <input id="descripciondonante" type="text" class="validate" name="donante">
+          <label for="descripciondonante">Descripción del Donante</label>
+        </div>
+          <div class="center input-field col s6">
+        <button class="btn waves-effect waves-light orange" type="submit" name="nuevo">Nuevo</button>
+          </div>
+      </div>
+     
+     </form>
+	
+  
+  </div>
+  </div>
+      
+<div class="container">
+ 
+  <div class="row">
+      
+    <form action="gestion_donante.php" method="post" class="col s12">
+      
+      <div class="row">
+        <div class="center input-field col s6">
+          <input id="descripciondonante" type="text" class="validate" name="eliminadonante">
+          <label for="descripciondonante">Id del Donante</label>
+        </div>
+         <div class="center input-field col s6">
+        <button class="btn waves-effect waves-light orange" type="submit" name="elimina">Eliminar</button>
+      </div> 
+      </div>
+     
+    </form>
+    </div>
+</div>
+<center><a href="gestion.php" id="download-button" class="btn waves-effect waves-light light-blue lighten-1">Volver</a></center>
+
+</body>
+  
+ 
+  
+  
+  
+</html>

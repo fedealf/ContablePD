@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Sistema Contable PD</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+   <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  
+</head>
+<body>
+    
+<main>    
+
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo">Sistema Contable</a>
+      <ul class="right hide-on-med-and-down">
+        <a>Ingreso al Sistema</a>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Ingreso al Sistema</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+<div class="container">
+ <div class="section">
+
+  <div class="row">
+    <form action="index.php?modo=login" method="post" class="col s12">
+      
+      <div class="row">
+        <div class="center input-field col s12">
+          <input id="user" type="text" class="validate" name="user">
+          <label for="usuario">User</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center input-field col s12">
+          <input id="pass" type="password" class="validate" name="pass">
+          <label for="pass">Password</label>
+        </div>
+        </div>
+	  <div class="row">
+	  <div class="center input-field col s12">
+        <input type="hidden" name="login" value="1"/>      
+        <button class="btn waves-effect waves-light orange" type="submit" name="ingresar">Ingresar
+    <i class="material-icons right">send</i>
+  </button>
+      </div>
+	  </div>
+	  
+    </form>
+	
+  
+  </div>
+  </div>
+   </div>
+
+</main>
+
+
+<footer class="page-footer orange">
+
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Pastoral Digital</h5>
+          <p class="grey-text text-lighten-4">Pastoral Digital es una acción programada y orgánica de la Iglesia Católica que tiene como finalidad contribuir a su misión evangelizadora a través de los medios digitales.</p>
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Hecho por <a class="orange-text text-lighten-3" href="https://pastoraldigital.com/">Pastoral Digital</a>
+      </div>
+    </div>
+  </footer>
+    
+  </body>
+  
+ 
+  
+  
+  
+</html>

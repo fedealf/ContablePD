@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Sistema Contable PD</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+   <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+  
+  
+</head>
+<body>
+
+<h5 class="header center orange-text">Gestión Administrativa</h5>
+<hr align="center" width="80%" style="color: #29b6f6;">
+<br/>
+
+<div class="container">
+ <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Gestión de Diócesis</div>
+      <div class="collapsible-body"><br/>
+          <center><a href="gestion_diocesis.php" id="download-button" class="btn waves-effect waves-light orange">Acceder</a></center>
+          <br/>
+          
+          <table class="striped centered">
+        <thead>
+          <tr>
+              <th data-field="id">Id</th>
+              <th data-field="diocesis">Diócesis</th>
+              <th data-field="parroquias">Cantidad de Parroquias</th>
+              <th data-field="costo">Licencia por Parroquia</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Buenos Aires</td>
+            <td>189</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Villa María</td>
+            <td>35</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Corrientes</td>
+            <td>56</td>
+            <td>$45</td>
+          </tr>
+        </tbody>
+      </table>
+          
+      </div>
+    </li>
+    
+    
+    <li>
+      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Gestión de Donantes</div>
+      <div class="collapsible-body"><br/>
+          <center><a href="gestion_donante.php" id="download-button" class="btn waves-effect waves-light orange">Acceder</a></center>
+          <br/>
+          
+          <table class="striped centered">
+        <thead>
+          <tr>
+              <th data-field="id">Id</th>
+              <th data-field="diocesis">Nombre del Donante</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>USAL</td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>GCBA</td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ministerio de Culto</td>
+            
+          </tr>
+        </tbody>
+      </table>
+          
+      </div>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Gestión de Conceptos</div>
+      <div class="collapsible-body"><br/>
+          <center><a href="gestion_concepto.php" id="download-button" class="btn waves-effect waves-light orange">Acceder</a></center>
+          <br/>
+        <table class="striped centered">
+        <thead>
+          <tr>
+              <th data-field="id">Id</th>
+              <th data-field="diocesis">Descripción</th>
+              <th data-field="parroquias">Tipo de Concepto</th>
+              <th data-field="parroquias">Moneda</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sueldos</td>
+            <td>Egresos<td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Contratación Servidores</td>
+            <td>Egresos</td>
+            <td>Peso Argentino</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Licencia Mensual</td>
+            <td>Ingresos</td>
+            <td>Peso Argentino</td>
+           </tr>
+        </tbody>
+      </table>  
+      
+      
+      
+      
+      
+      </div>
+    </li>
+ </ul>
+</div>
+
+<center><a href="dashboard.php" id="download-button" class="btn waves-effect waves-light light-blue lighten-1">Volver</a></center>
+
+
+  </body>
+  
+ 
+  
+  
+  
+</html>

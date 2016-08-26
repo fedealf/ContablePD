@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Sistema Contable PD</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+   <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+  
+ 
+  
+</head>
+<body>
+
+<h5 class="header center orange-text">Ingreso de Información</h5>
+<hr align="center" width="80%" style="color: #29b6f6;">
+<br/>
+
+<div class="container">
+ 
+  <div class="row">
+    <form class="col s12">
+       
+    <div class="row">
+    <div class="left input-field col s4">
+    <input type="date" class="datepicker">
+   <label for="fecha">Fecha</label>
+  </div>    
+        
+    <div class="left input-field col s4">
+    <select>
+      <option value="" disabled selected>Elije tu opción</option>
+      <option value="1">Ingreso</option>
+      <option value="2">Egreso</option>
+    </select>
+    <label for="tipoconcepto">Tipo de Operación</label>
+  </div>
+        
+   <div class="left input-field col s4">
+    <select>
+      <option value="" disabled selected>Elije tu opción</option>
+      <option value="1">Transferencia</option>
+      <option value="2">Efectivo</option>
+      <option value="2">Débito Automático</option>
+      <option value="2">Débito</option>
+    </select>
+    <label for="tipoconcepto">Tipo de Transacción</label>
+  </div>  
+   
+    
+   </div>
+        
+    <div class="row">    
+    <div class="left input-field col s6">
+    <select>
+      <option value="" disabled selected>Elije tu opción</option>
+      <option value="1">Peso Argentino</option>
+      <option value="2">Dólar</option>
+      <option value="2">Euro</option>
+    </select>
+    <label for="tipoconcepto">Moneda</label>
+  </div>
+        
+    <div class="center input-field col s6">
+          <input id="descripcionconcepto" type="text" class="validate">
+          <label for="descripcionconcepto">Importe</label>
+        </div> 
+        
+   </div>      
+    
+   <div class="row">    
+    <div class="left input-field col s12">
+    <select>
+      <option value="" disabled selected>Elije tu opción</option>
+      <option value="1">Sueldo</option>
+      <option value="2">Licencia Mensual</option>
+      <option value="2">Contratación de Servidores</option>
+    </select>
+    <label for="tipoconcepto">Descripción del Concepto</label>
+  </div>
+   </div>     
+   
+   <div class="row">    
+    <div class="left input-field col s12">
+    <select>
+      <option value="" disabled selected>Elije tu opción</option>
+      <option value="1">Buenos Aires</option>
+      <option value="2">Softlayer</option>
+      <option value="2">Federico Alfredsson</option>
+    </select>
+    <label for="tipoconcepto">Diócesis / Donante</label>
+  </div>
+   </div> 
+        
+            
+   <div class="row">
+        <div class="center input-field col s12">
+          <input id="descripcionconcepto" type="text" class="validate">
+          <label for="descripcionconcepto">Detalle</label>
+        </div>
+   </div>
+        
+        
+   	  <div class="row">
+	  <div class="center input-field col s12">
+        <a href="#" id="guardar-button" class="btn-large waves-effect waves-light orange">Guardar</a>
+        <a href="dashboard.php" id="cancelar-button" class="btn-large waves-effect waves-light orange">Cancelar</a>
+      </div>
+	  </div>
+	  
+    </form>
+	
+  
+  </div>
+  </div>
+
+
+ <script>
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+  </script>
+
+
+  </body>
+  
+ 
+  
+  
+  
+</html>
